@@ -1,0 +1,41 @@
+// Cloudflare Worker + Static Assets für wahl-strassenbau.de. Anleitung: README.md in diesem Ordner.
+{
+  "name": "wahl-strassenbau",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-06-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // nur das Formular läuft durch den Worker, alles andere sind statische Dateien
+    "run_worker_first": ["/kontakt.php"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wahl-forms",
+      // nach «npx wrangler d1 create wahl-forms --location=weur» die ausgegebene ID hier eintragen
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  // täglich 03:17 UTC: Anfragen älter als RETENTION_DAYS löschen (zusätzlich bei jeder neuen Anfrage)
+  "triggers": { "crons": ["17 3 * * *"] },
+  "vars": {
+    // log = es werden KEINE E-Mails gesendet (Anfragen nur in D1). Für den Betrieb: "smtp" + SMTP_* setzen.
+    "MAIL_TRANSPORT": "log",
+    "RECIPIENT": "info@wahl-strassenbau.de",
+    "FROM_ADDRESS": "noreply@wahl-strassenbau.de",
+    "SMTP_HOST": "",
+    "SMTP_PORT": "587",
+    "SMTP_SECURE": "tls",
+    "SMTP_USER": "",
+    "RETENTION_DAYS": "90",
+    "RATE_LIMIT": "5/600",
+    "MIN_FILL_SECONDS": "3",
+    "ALLOWED_ORIGINS": ""
+    // SMTP_PASS nie hier eintragen: «npx wrangler secret put SMTP_PASS»
+  },
+  "observability": { "enabled": true }
+}

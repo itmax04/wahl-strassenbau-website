@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#101111">
+  {{canonical}}
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Wahl Straßenbau">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:url" content="{{og_url}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  {{preload}}
+  <link rel="stylesheet" href="/styles.css">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__siteReady)document.documentElement.classList.remove('js')},4000);</script>
+  {{jsonld}}
+</head>
+<body class="{{class}}">
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="hdr" id="top">
+    <div class="wrap hdr__bar">
+      <a class="logo" href="/" aria-label="Wahl Straßenbau, Startseite">
+        <img src="/assets/img/logo-mark.png" alt="" width="44" height="44">
+        <span aria-hidden="true">Wahl Straßenbau</span>
+      </a>
+      <nav class="hdr__nav" aria-label="Hauptnavigation">
+        <a href="/leistungsangebot/"{{cur_leistungen}}>Leistungen</a>
+        <a href="/technikangebot/"{{cur_technik}}>Technik</a>
+        <a href="/referenzen/"{{cur_referenzen}}>Referenzen</a>
+        <a href="/#ueber-uns">Über uns</a>
+        <a href="/kontakt/"{{cur_kontakt}}>Kontakt</a>
+      </nav>
+      <div class="hdr__actions">
+        <a class="hdr__tel" href="tel:+4938125223941">{{icon:phone}}0381 25 22 39 41</a>
+        <a class="iconbtn iconbtn--outline hdr__call--t" href="tel:+4938125223941" aria-label="Anrufen: 0381 25 22 39 41">{{icon:phone}}</a>
+        <a class="iconbtn iconbtn--yellow hdr__call--m" href="tel:+4938125223941" aria-label="Anrufen: 0381 25 22 39 41">{{icon:phone}}</a>
+        <a class="btn btn--primary btn--m hdr__cta" href="/kontakt/">Angebot anfragen{{icon:arrow-right}}</a>
+        <button class="iconbtn hdr__menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">{{icon:menu}}</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menü" hidden>
+    <div class="wrap">
+      <div class="menu__top">
+        <a class="logo" href="/" aria-label="Wahl Straßenbau, Startseite">
+          <img src="/assets/img/logo-mark.png" alt="" width="44" height="44">
+          <span aria-hidden="true">Wahl Straßenbau</span>
+        </a>
+        <button class="iconbtn iconbtn--outline menu__close" type="button" aria-label="Menü schließen">{{icon:close}}</button>
+      </div>
+      <nav class="menu__list" aria-label="Menü">
+        <a href="/"{{cur_start}}>Startseite{{icon:arrow-right}}</a>
+        <a href="/leistungsangebot/"{{cur_leistungen_exact}}>Leistungen{{icon:arrow-right}}</a>
+        <a class="menu__sub" href="/leistungsangebot/pflasterarbeiten/"{{cur_pflaster}}>Pflasterarbeiten{{icon:chevron-right}}</a>
+        <a class="menu__sub" href="/leistungsangebot/garten-landschaft/"{{cur_garten}}>Garten &amp; Landschaft{{icon:chevron-right}}</a>
+        <a href="/technikangebot/"{{cur_technik}}>Technik{{icon:arrow-right}}</a>
+        <a href="/referenzen/"{{cur_referenzen}}>Referenzen{{icon:arrow-right}}</a>
+        <a href="/#ueber-uns">Über uns{{icon:arrow-right}}</a>
+        <a href="/kontakt/"{{cur_kontakt}}>Kontakt{{icon:arrow-right}}</a>
+      </nav>
+      <div class="menu__contact">
+        <a class="btn btn--emergency btn--block" href="tel:+4938125223941">{{icon:phone}}24/7 Havarie: 0381 25 22 39 41</a>
+        <a class="btn btn--primary btn--block" href="/kontakt/">Angebot anfragen{{icon:arrow-right}}</a>
+        <div class="menu__meta">
+          <a href="tel:+491723990523">{{icon:smartphone}}Mobil +49 (0) 172 39 905 23</a>
+          <a href="mailto:info@wahl-strassenbau.de">{{icon:mail}}info@wahl-strassenbau.de</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="inhalt" tabindex="-1">
+{{body}}
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__cols">
+        <div class="ftr__brand">
+          <a class="logo logo--l" href="/" aria-label="Wahl Straßenbau, Startseite">
+            <img src="/assets/img/logo-mark.png" alt="" width="56" height="56" loading="lazy">
+            <span aria-hidden="true">Wahl Straßenbau</span>
+          </a>
+          <p>Meisterbetrieb seit 2005 · Straßenbaumeister Robert Wahl, Vorstand der Bauinnung Rostock</p>
+          <a class="btn btn--secondary btn--m" href="/kontakt/">Projekt anfragen{{icon:arrow-right}}</a>
+        </div>
+        <nav class="ftr__col" aria-labelledby="ftr-seiten">
+          <h2 id="ftr-seiten">Seiten</h2>
+          <ul>
+            <li><a href="/leistungsangebot/">Leistungen</a></li>
+            <li><a href="/leistungsangebot/pflasterarbeiten/">Pflasterarbeiten</a></li>
+            <li><a href="/leistungsangebot/garten-landschaft/">Garten &amp; Landschaft</a></li>
+            <li><a href="/technikangebot/">Technik</a></li>
+            <li><a href="/referenzen/">Referenzen</a></li>
+            <li><a href="/kontakt/">Kontakt</a></li>
+          </ul>
+        </nav>
+        <address class="ftr__col">
+          <h2>Kontakt</h2>
+          <a class="ftr__row" href="tel:+4938125223941"><span>Telefon</span><span>+49 (0) 381 25 22 39 41</span></a>
+          <a class="ftr__row" href="tel:+491723990523"><span>Mobil</span><span>+49 (0) 172 39 905 23</span></a>
+          <a class="ftr__row" href="mailto:info@wahl-strassenbau.de"><span>E-Mail</span><span>info@wahl-strassenbau.de</span></a>
+          <p class="ftr__addr">Ringstraße 25<br>18059 Papendorf</p>
+          <a class="ftr__route" href="{{maps}}" rel="noopener" target="_blank">Route planen{{icon:arrow-right}}<span class="sr-only"> (öffnet Google Maps in neuem Tab)</span></a>
+        </address>
+        <a class="ftr__247" href="tel:+4938125223941">
+          <span class="eyebrow">24/7</span>
+          <span class="h4">24-Stunden-Havarieservice</span>
+          <b>0381 25 22 39 41</b>
+        </a>
+      </div>
+      <div class="ftr__legal">
+        <nav aria-label="Rechtliches">
+          <ul>
+            <li><a href="/about/">Impressum</a></li>
+            <li><a href="/j/privacy/">Datenschutz</a></li>
+            <li><a href="/sitemap/">Sitemap</a></li>
+            <li><a href="/j/legal-guarantee/">Gesetzliche Gewährleistung</a></li>
+            <li><a href="/j/withdrawal/">Vertrag widerrufen</a></li>
+          </ul>
+        </nav>
+        <p>© {{year}} Wahl Straßenbau GmbH &amp; Co. KG · USt-IdNr. DE 294 970 751</p>
+      </div>
+    </div>
+  </footer>
+{{totop}}
+  <script src="/main.js" defer></script>
+</body>
+</html>

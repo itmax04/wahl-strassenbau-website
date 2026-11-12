@@ -1,0 +1,33 @@
+# Восстановлен заново (оригинальный .gitignore не сохранился), по README и handoff
+.DS_Store
+Thumbs.db
+
+# Собранные страницы (python3 build.py) — исходники в src/
+/index.html
+/404.html
+/about/
+/j/
+/kontakt/
+/leistungsangebot/
+/referenzen/
+/sitemap/
+/technikangebot/
+/robots.txt
+/sitemap.xml
+server/templates/
+
+# Секреты и данные форм
+server/config.local.php
+storage/*
+!storage/.htaccess
+!storage/index.html
+
+# Cloudflare-пакет: результаты сборки (python3 cloudflare/build.py)
+cloudflare/dist/
+cloudflare/worker/generated.js
+cloudflare/*.zip
+cloudflare/node_modules/
+cloudflare/.wrangler/
+
+# Пустой файл неизвестного происхождения (0 байт), на сборку не влияет
+/_bentotest/

@@ -1,0 +1,2 @@
+# Anfragen-Datenbank und Mail-Log: niemals per HTTP ausliefern
+Require all denied

@@ -1,0 +1,16 @@
+{
+  "_comment": "Einzige Quelle der Formular-Texte: build.py (Client, data-msg) und server/lib/Validator.php (Server). Texte aus Figma 7:589, 7:605 und Frame 07F; TEXTVORSCHLAG: vom Kunden freigeben.",
+  "required": "Bitte füllen Sie dieses Pflichtfeld aus.",
+  "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+  "telefon": "Bitte geben Sie eine gültige Telefonnummer ein.",
+  "nachricht": "Bitte beschreiben Sie kurz Ihr Anliegen.",
+  "einwilligung": "Bitte bestätigen Sie die Einwilligung zur Datenverarbeitung.",
+  "leistung": "Bitte wählen Sie eine Leistung aus der Liste.",
+  "toolong": "Bitte kürzen Sie Ihre Eingabe auf höchstens %d Zeichen.",
+  "summary": "Bitte prüfen Sie die markierten Felder.",
+  "ok": "Sieht gut aus.",
+  "network": "Senden fehlgeschlagen. Bitte rufen Sie uns an: 0381 25 22 39 41.",
+  "rate": "Zu viele Anfragen in kurzer Zeit. Bitte versuchen Sie es später erneut oder rufen Sie uns an: 0381 25 22 39 41.",
+  "origin": "Die Anfrage wurde abgelehnt. Bitte senden Sie das Formular direkt auf wahl-strassenbau.de ab.",
+  "method": "Method Not Allowed"
+}

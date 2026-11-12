@@ -1,0 +1,62 @@
+{
+ "weg": {
+  "alt": "Geschwungener Weg aus Natursteinpflaster durch einen Garten, links eine Trockenmauer aus Naturstein.",
+  "einsatz": "Startseite-Hero, Pflasterarbeiten-Hero, Technik-Hero (Detail), 404, Referenzen „Weitere Arbeiten“"
+ },
+ "medaillon": {
+  "alt": "Straßenbauer verlegt ein Natursteinmosaik mit dunklem Medaillon in Bruchsteinplatten.",
+  "einsatz": "Startseite-Band „Handwerk“, Leistungen-Karte, Galerie Pflasterarbeiten, Referenzen"
+ },
+ "rundplatz": {
+  "alt": "Runder Platz aus hellem Natursteinpflaster mit Mulchfläche und Findlingen.",
+  "einsatz": "Garten-&-Landschaft-Hero, Danke-Hero, Galerie Garten, Referenzen"
+ },
+ "segmentbogen": {
+  "alt": "Segmentbogenpflaster aus hellem Naturstein mit dunklen Bögen.",
+  "einsatz": "Leistungen-Hero, Galerie Pflasterarbeiten"
+ },
+ "logo-hammer": {
+  "alt": "Logo-Mosaik aus Naturstein (Hand mit Hammer) in rundem Rahmen.",
+  "einsatz": "Service card „Mosaik & Logopflasterung“, Galerie Pflasterarbeiten, Leistungen „Spezialgebiete“, Danke"
+ },
+ "stier-ziegel": {
+  "alt": "Stiermotiv als Mosaik aus rötlichen Pflastersteinen.",
+  "einsatz": "Galerie Pflasterarbeiten"
+ },
+ "logo-mosaik": {
+  "alt": "Firmenlogo als Mosaik aus Pflastersteinen.",
+  "einsatz": "Startseite-Referenz „Logo als Natursteinmosaik“, Referenzen-Case Logopflasterung"
+ },
+ "stiere-bau": {
+  "alt": "Zwei Stiermotive aus hellen Pflastersteinen während der Verlegung.",
+  "einsatz": "Referenzen-Case Logopflasterung"
+ },
+ "wappen-gruen": {
+  "alt": "Wappenmosaik mit Greif aus Pflastersteinen in einer Grünanlage mit Tulpen (fertig).",
+  "einsatz": "Referenzen-Hero, Vorher/Nachher-Slider (links), Startseite-Referenz"
+ },
+ "wappen-bau": {
+  "alt": "Wappenmosaik während der Verlegung.",
+  "einsatz": "Vorher/Nachher-Slider (rechts)"
+ },
+ "stern-beet": {
+  "alt": "Weißer Stern aus Pflastersteinen in einem Beet mit Buchskugeln.",
+  "einsatz": "Startseite-Referenz, Referenzen-Case Beet"
+ },
+ "tritt": {
+  "alt": "Trittplatten aus Naturstein im Rasen mit geschwungener Pflasterkante.",
+  "einsatz": "Galerie Garten, Leistungen-Karte „Garten & Landschaft“"
+ },
+ "ornament": {
+  "alt": "Geschwungenes Ornament aus Pflastersteinen im Rasen um eine Holzfläche.",
+  "einsatz": "Galerie Garten"
+ },
+ "rosette": {
+  "alt": "Runde Rosette aus Natursteinpflaster während der Verlegung.",
+  "einsatz": "Galerie Garten"
+ },
+ "team-2020": {
+  "alt": "Das Team von Wahl Straßenbau, Sommer 2020, vor dem Firmengebäude.",
+  "einsatz": "Startseite „Über uns“"
+ }
+}
