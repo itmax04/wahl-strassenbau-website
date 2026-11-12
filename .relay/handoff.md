@@ -2,7 +2,8 @@
 
 ## Identity
 - Задача: восстановить удалённые исходники сайта и подготовить их к git и выкладке.
-- Рабочая папка: `~/Desktop/wahl-strassenbau-recovered`. Git **не инициализирован**, коммитов нет.
+- Рабочая папка: `~/Desktop/wahl-strassenbau-recovered`. Git инициализирован (ветка `main`), коммит `ad1407b` «Восстановленные исходники…». Working tree чистый.
+- `.relay/handoff.md` тоже отслеживается git: после правок handoff он будет показан как изменённый.
 - Готовая сборка (эталон): `~/Desktop/wahl-strassenbau-dist`. Это тоже не git-репозиторий.
 - GitHub: `itmax04/wahl-strassenbau-website` существует, но пустой (только README, ветки `main` и `stage-00-contract` на `2efce86`).
 
@@ -36,8 +37,10 @@
   открытые вопросы для заказчика в `docs/KUNDENFRAGEN.md`.
 
 ## Next
-1. В `~/Desktop/wahl-strassenbau-recovered`: удалить пустые папки, сделать `git init -b main`,
-   первый коммит (attribution из system-reminder) и показать пользователю `git status`.
-2. Push только после явного согласия пользователя: в `itmax04/wahl-strassenbau-website`
-   (там уже есть коммит с README, понадобится pull/rebase или отдельная ветка). Спросить, публичный ли репозиторий.
+1. ~~В `~/Desktop/wahl-strassenbau-recovered`: удалить пустые папки, git init, первый коммит.~~ Сделано 2026-11-12:
+   пустых папок не нашлось; `.gitignore` дополнен `/_bentotest/` (пустой index.html 0 байт, на сборку не влияет);
+   секреты в индексе не найдены (только плейсхолдеры и тестовые значения `testpass`/`geheim`); коммит `ad1407b`.
+2. Push только после явного согласия пользователя. Репозиторий `itmax04/wahl-strassenbau-website` (на GitHub есть
+   коммит с README, ветки `main` и `stage-00-contract`). Нужно спросить: публичный ли он. Без согласия не пушить.
+   Перед push: `git fetch`, решить, как совмещать историю (rebase или отдельная ветка), не трогая `main` на GitHub без спроса.
 3. Спросить, где хостинг: Cloudflare или PHP. От ответа зависит, какой бэкенд формы готовить и проверять.
